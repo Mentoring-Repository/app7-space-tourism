@@ -1,35 +1,51 @@
 .homepage {
-    background: url('/public/images/Background_complete.jpg');
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    padding: 100px 165px;
+  background: url("/public/images/Background_complete.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  padding: 100px 165px;
 }
 
 .light-purple-text {
-    color: rgb(208,214,249);
+  color: rgb(208, 214, 249);
 }
 
 .white-text {
-    color: white;
+  color: white;
 }
 
 .btn-explore {
-    font-family: 'Bellefair', sans-serif;
-    font-size: 32px;
-    letter-spacing: 2px;
-    padding: 120px 70px;
-    border-radius: 100%;
-    border: none;
+  font-family: "Bellefair", sans-serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+  padding: 120px 70px;
+  border-radius: 100%;
+  border: none;
 }
 
 a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
 }
 
-.row.homepage{
-    --bs-gutter-x : 0 !important;
+.row.homepage {
+  --bs-gutter-x: 0 !important;
+}
+
+.destination-page {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../public/images/Background_planets.jpg");
+  padding: 250px 165px;
+}
+
+.destination-page-nr {
+  color: rgb(104, 104, 104);
+  font-weight: bold;
+}
+
+.destination-page-title {
+  color: white;
+  text-transform: uppercase;
 }
