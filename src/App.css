@@ -29,3 +29,7 @@ a {
     color: black;
 
 }
+
+.row.homepage{
+    --bs-gutter-x : 0 !important;
+}
