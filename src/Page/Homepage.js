@@ -2,7 +2,7 @@ const Homepage = () => {
 	return (
 		<div className="homepage">
 			<div className="homepage__content row justify-content-center align-items-end h-100">
-				<div className="col-12 col-xl-6 d-flex flex-column justify-content-end pb-5 text-center text-xl-start">
+				<div className="col-12 col-xl-6 d-flex flex-column justify-content-end pb-5 px-0 text-center text-xl-start">
 					<p className="heading-5 light-purple-text">
 						SO, YOU WANT TO TRAVEL TO
 					</p>

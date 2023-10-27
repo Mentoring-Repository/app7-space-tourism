@@ -2,8 +2,8 @@
 	background: url("/public/images/Background_complete.jpg");
 	height: 100vh;
 	background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+	background-position: center;
+	background-repeat: no-repeat;
 	padding: 100px 165px;
 }
 
@@ -56,38 +56,43 @@ a {
 	text-transform: uppercase;
 }
 
-
 /* Media queries tablet */
 
+@media (max-width: 1200px) {
+	.homepage {
+		background: url("/public/images/Background_home_tablet.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		padding: 100px 100px 80px;
+	}
+
+	.btn-explore {
+		font-size: 20px;
+		letter-spacing: 1.25px;
+		padding: 70px 40px;
+		border-radius: 100%;
+		border: none;
+	}
+}
+
 @media (max-width: 1024px) {
-  .homepage {
-    background: url("/public/images/Background_home_tablet.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 80px 30px 30px 30px;
-  }
+
 }
 
 /* Media queries mobile */
 
 @media (max-width: 768px) {
-  .homepage {
-    padding: 80px 30px 30px 30px;
-  }
+	.homepage {
+		padding: 80px 20px 20px 20px;
+	}
 
-  .btn-explore {
-    font-size: 20px;
-    letter-spacing: 1.25px;
-    padding: 70px 40px;
-    border-radius: 100%;
-    border: none;
-  }
+
 }
 
 @media (max-width: 370px) {
-  .homepage {
-    padding: 80px 15px 15px 15px;
-  }
-
+	.homepage {
+		padding: 80px 10px 10px 10px;
+		height: auto;
+	}
 }
