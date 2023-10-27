@@ -1,25 +1,38 @@
-import "./Header.css"
+import "./Header.css";
+import { useState } from "react";
 
+const Header = () => {
+    const [activeLink, setActiveLink] = useState(0);
+    
+    const links = [
+        {text: "00 Home", path: "/"},
+        {text: "01 Destination", path: "/destination"},
+        {text: "02 Crew", path: "/crew"},
+        {text: "03 Technology", path: "/technology"},
+    ]
 
+    const changeActiveLink = (index) => {
+        setActiveLink(index)
+    }
 
-const Header = ()=>{
+	return (
+		<header>
+			<img
+				src="images/Logo.svg"
+				alt=""
+			/>
+			<hr />
+			<nav>
+				<ul>
+					{links.map((link, index) => (
+                        <li key={index} onClick={() => changeActiveLink(index)} className={index === activeLink ? 'active' : ''}>
+                            <a href={link.path}>{link.text}</a>
+                        </li>
+                    ))}
+				</ul>
+			</nav>
+		</header>
+	);
+};
 
-
-    return(
-        <header>
-            <img src="images/Logo.svg" alt="" />
-            <hr />
-            <nav>
-                <ul>
-                    <li className="active"><a href="/" >00 Home</a></li>
-                    <li><a href="/destination">01 Destination</a></li>
-                    <li><a href="/crew">02 Crew</a></li>
-                    <li><a href="/technology">03 Technology</a></li>
-                </ul>
-            </nav>
-        </header>
-    )
-}
-
-
-export default Header
+export default Header;
