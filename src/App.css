@@ -98,6 +98,6 @@ a {
 @media (max-width: 370px) {
 	.homepage {
 		padding: 80px 10px 10px 10px;
-		height: auto;
+		height: 100%;
 	}
 }

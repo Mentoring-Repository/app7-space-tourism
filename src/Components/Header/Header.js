@@ -26,6 +26,13 @@ const Header = () => {
 			/>
 			<hr />
 
+			<img
+				onClick={handleNavVisibilty}
+				className="nav__mobile-burger"
+				src="images/Burger.png"
+				alt=""
+			/>
+
 			{/* Desktop nav */}
 
 			<nav className="nav__desktop">
@@ -53,13 +60,13 @@ const Header = () => {
 						: "nav__mobile nav-hidden"
 				}
 			>
-				<img
-					onClick={handleNavVisibilty}
-					className="nav__mobile-close"
-					src="/images/Close.svg"
-					alt=""
-				/>
 				<ul>
+					<img
+						onClick={handleNavVisibilty}
+						className="nav__mobile-close"
+						src="/images/Close.svg"
+						alt=""
+					/>
 					{links.map((link, index) => (
 						<li
 							key={index}
@@ -73,13 +80,6 @@ const Header = () => {
 					))}
 				</ul>
 			</nav>
-
-			<img
-				onClick={handleNavVisibilty}
-				className="nav__mobile-burger"
-				src="images/Burger.png"
-				alt=""
-			/>
 		</header>
 	);
 };
