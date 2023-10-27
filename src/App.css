@@ -27,6 +27,11 @@
 	padding: 120px 70px;
 	border-radius: 100%;
 	border: none;
+	transition: all 0.3s ease;
+}
+
+.btn-explore:hover {
+	box-shadow: 0 0 0 50px rgba(255,255,255,0.2);
 }
 
 a {
