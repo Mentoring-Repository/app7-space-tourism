@@ -2,8 +2,9 @@ import "./Header.css";
 import { useState } from "react";
 
 const Header = () => {
-	const [activeLink, setActiveLink] = useState(0);
-    const [navVisibilty, setNavVisibilty] = useState(false)
+	const [navVisibilty, setNavVisibilty] = useState(false);
+
+	const location = window.location.pathname;
 
 	const links = [
 		{ text: "Home", path: "/" },
@@ -12,56 +13,73 @@ const Header = () => {
 		{ text: "Technology", path: "/technology" },
 	];
 
-	const handleActiveLinks = (index) => {
-		setActiveLink(index);
+	const handleNavVisibilty = () => {
+		setNavVisibilty(!navVisibilty);
 	};
 
-    const handleNavVisibilty = () => {
-        setNavVisibilty(!navVisibilty)
-    }
- 
 	return (
 		<header>
-			<img className="logo"
+			<img
+				className="logo"
 				src="images/Logo.svg"
 				alt=""
 			/>
 			<hr />
 
-            {/* Desktop nav */}
+			{/* Desktop nav */}
 
 			<nav className="nav__desktop">
 				<ul>
 					{links.map((link, index) => (
 						<li
 							key={index}
-							onClick={() => handleActiveLinks(index)}
-							className={index === activeLink ? "active" : ""}
+							className={location === link.path ? "active" : ""}
 						>
-							<a href={link.path}><span className="link-index">0{index} </span>{link.text}</a>
+							<a href={link.path}>
+								<span className="link-index">0{index} </span>
+								{link.text}
+							</a>
 						</li>
 					))}
 				</ul>
 			</nav>
 
-            {/* Mobile nav */}
+			{/* Mobile nav */}
 
-            <nav className={navVisibilty ? 'nav__mobile nav-visible' : 'nav__mobile nav-hidden'}>
-                <img onClick={handleNavVisibilty} className="nav__mobile-close" src="/images/Close.svg" alt=""/>
+			<nav
+				className={
+					navVisibilty
+						? "nav__mobile nav-visible"
+						: "nav__mobile nav-hidden"
+				}
+			>
+				<img
+					onClick={handleNavVisibilty}
+					className="nav__mobile-close"
+					src="/images/Close.svg"
+					alt=""
+				/>
 				<ul>
 					{links.map((link, index) => (
 						<li
 							key={index}
-							onClick={() => handleActiveLinks(index)}
-							className={index === activeLink ? "active" : ""}
+							className={location === link.path ? "active" : ""}
 						>
-							<a href={link.path}><span>0{index} </span>{link.text}</a>
+							<a href={link.path}>
+								<span>0{index} </span>
+								{link.text}
+							</a>
 						</li>
 					))}
 				</ul>
 			</nav>
 
-            <img onClick={handleNavVisibilty} className="nav__mobile-burger" src="images/Burger.png" alt=""/>
+			<img
+				onClick={handleNavVisibilty}
+				className="nav__mobile-burger"
+				src="images/Burger.png"
+				alt=""
+			/>
 		</header>
 	);
 };
