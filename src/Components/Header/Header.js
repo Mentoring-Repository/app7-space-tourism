@@ -1,25 +1,87 @@
-import "./Header.css"
+import "./Header.css";
+import { useState } from "react";
 
+const Header = () => {
+	const [navVisibilty, setNavVisibilty] = useState(false);
 
+	const location = window.location.pathname;
 
-const Header = ()=>{
+	const links = [
+		{ text: "Home", path: "/" },
+		{ text: "Destination", path: "/destination" },
+		{ text: "Crew", path: "/crew" },
+		{ text: "Technology", path: "/technology" },
+	];
 
+	const handleNavVisibilty = () => {
+		setNavVisibilty(!navVisibilty);
+	};
 
-    return(
-        <header>
-            <img src="images/Logo.svg" alt="" />
-            <hr />
-            <nav>
-                <ul>
-                    <li className="active"><a href="/" >00 Home</a></li>
-                    <li><a href="/destination">01 Destination</a></li>
-                    <li><a href="/crew">02 Crew</a></li>
-                    <li><a href="/technology">03 Technology</a></li>
-                </ul>
-            </nav>
-        </header>
-    )
-}
+	return (
+		<header>
+			<img
+				className="logo"
+				src="images/Logo.svg"
+				alt=""
+			/>
+			<hr />
 
+			<img
+				onClick={handleNavVisibilty}
+				className="nav__mobile-burger"
+				src="images/Burger.png"
+				alt=""
+			/>
 
-export default Header
+			{/* Desktop nav */}
+
+			<nav className="nav__desktop">
+				<ul>
+					{links.map((link, index) => (
+						<li
+							key={index}
+							className={location === link.path ? "active" : ""}
+						>
+							<a href={link.path}>
+								<span className="link-index">0{index} </span>
+								{link.text}
+							</a>
+						</li>
+					))}
+				</ul>
+			</nav>
+
+			{/* Mobile nav */}
+
+			<nav
+				className={
+					navVisibilty
+						? "nav__mobile nav-visible"
+						: "nav__mobile nav-hidden"
+				}
+			>
+				<ul>
+					<img
+						onClick={handleNavVisibilty}
+						className="nav__mobile-close"
+						src="/images/Close.svg"
+						alt=""
+					/>
+					{links.map((link, index) => (
+						<li
+							key={index}
+							className={location === link.path ? "active" : ""}
+						>
+							<a href={link.path}>
+								<span>0{index} </span>
+								{link.text}
+							</a>
+						</li>
+					))}
+				</ul>
+			</nav>
+		</header>
+	);
+};
+
+export default Header;
