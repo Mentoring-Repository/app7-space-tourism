@@ -1,0 +1,36 @@
+.destination-list {
+  list-style: none;
+  color: #d0d6f9;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.dest-title {
+  color: white;
+  text-transform: uppercase;
+}
+
+.dest-desc {
+  color: #d0d6f9;
+}
+
+.dest-details .subhead-1 {
+  color: white;
+  text-transform: uppercase;
+}
+.dest-details .subhead-2 {
+  color: #d0d6f9;
+}
+
+.dest-details {
+  border-top: 1px solid #383b4b;
+  padding-top: 30px;
+  margin-top: 55px;
+}
+
+.dest-img {
+  width: 450px;
+  margin-top: 50px;
+}
+.destination-list li.active {
+  color: white;
+}
