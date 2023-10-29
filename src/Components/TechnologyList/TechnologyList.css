@@ -1,0 +1,33 @@
+.technology-item {
+	list-style: none;
+	color: white;
+	border: 1px solid white;
+	border-radius: 50%;
+	text-align: center;
+	padding: 25px 35px;
+	cursor: pointer;
+}
+
+.tech-content {
+    max-width: 600px;
+}
+
+.tech-img {
+	width: 515px;
+	height: 527px;
+    object-fit: cover;
+}
+
+.active-tech {
+    background-color: white;
+    color: black;
+}
+
+/* Media queries mobile */
+
+@media (max-width: 1200px) {
+    .tech-img {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+  }

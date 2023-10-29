@@ -3,11 +3,11 @@ import DestinationList from "../Components/DestinationList/DestinationList";
 const Destination = () => {
   return (
     <>
-      <div className="destination-page row">
+      <div className="destination-page-bg page-layout row">
         <div className="col-12">
           <p className="heading-5">
-            <span className="destination-page-nr me-4">01</span>
-            <span className="destination-page-title">
+            <span className="page-nr me-4">01</span>
+            <span className="page-title">
               Pick your destination
             </span>
           </p>

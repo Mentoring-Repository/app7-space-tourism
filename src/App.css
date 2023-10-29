@@ -44,20 +44,32 @@ a {
   --bs-gutter-x: 0 !important;
 }
 
-.destination-page {
+.page-layout {
   width: 100vw;
   height: 100vh;
-  background-image: url("../public/images/Background_planets.jpg");
   padding: 250px 165px;
   --bs-gutter-x: 0 !important;
+  overflow-x: hidden;
 }
 
-.destination-page-nr {
+.tech-style {
+  padding-right: 0;
+}
+
+.destination-page-bg {
+  background-image: url("../public/images/Background_planets.jpg");
+}
+
+.technology-page-bg {
+  background-image: url('../public/images/Background_technology.jpg');
+}
+
+.page-nr {
   color: rgb(104, 104, 104);
   font-weight: bold;
 }
 
-.destination-page-title {
+.page-title {
   color: white;
   text-transform: uppercase;
 }
@@ -80,9 +92,14 @@ a {
     border-radius: 100%;
     border: none;
   }
+  .page-layout {
+    padding: 150px 0;
+  }
 }
 
 @media (max-width: 1024px) {
+
+
 }
 
 /* Media queries mobile */

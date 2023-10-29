@@ -6,6 +6,27 @@
   --white: rgb(255,255,255);
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
