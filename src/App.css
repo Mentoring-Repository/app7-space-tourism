@@ -61,7 +61,13 @@ a {
 }
 
 .technology-page-bg {
-  background-image: url('../public/images/Background_technology.jpg');
+  background-image: url("../public/images/Background_technology.jpg");
+}
+
+.crew-page-bg {
+  background-image: url("../public/images/Background_crew.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .page-nr {
@@ -74,6 +80,9 @@ a {
   text-transform: uppercase;
 }
 
+.crew-style {
+  overflow: hidden;
+}
 /* Media queries tablet */
 
 @media (max-width: 1200px) {
@@ -98,8 +107,6 @@ a {
 }
 
 @media (max-width: 1024px) {
-
-
 }
 
 /* Media queries mobile */

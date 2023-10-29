@@ -1,0 +1,23 @@
+.crew-item {
+  list-style: none;
+  background-color: #979797;
+  border-radius: 50%;
+  width: 10px;
+  padding: 7px;
+  margin-right: 25px;
+}
+
+.crew-list {
+  display: flex;
+}
+
+.crew-img {
+  position: absolute;
+  left: 150px;
+  bottom: -90px;
+  height: 650px;
+}
+
+.crew-container {
+  margin-top: 150px;
+}
