@@ -12,6 +12,10 @@
     max-width: 600px;
 }
 
+.dest-desc {
+    max-width: 100%;
+}
+
 .tech-img {
 	width: 515px;
 	height: 527px;
@@ -29,5 +33,9 @@
     .tech-img {
         width: 100%;
         margin-bottom: 50px;
+    }
+
+    .dest-desc {
+        max-width: 90%;
     }
   }

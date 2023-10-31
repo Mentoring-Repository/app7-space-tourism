@@ -3,9 +3,9 @@ import DestinationList from "../Components/DestinationList/DestinationList";
 const Destination = () => {
 	return (
 		<div className="destination-page-bg">
-			<div className=" page-layout row">
+			<div className="page-layout row">
 				<div className="col-12">
-					<p className="heading-5 text-center text-xl-start">
+					<p className="heading-5 text-center text-sm-start">
 						<span className="page-nr me-4">01</span>
 						<span className="page-title">
 							Pick your destination

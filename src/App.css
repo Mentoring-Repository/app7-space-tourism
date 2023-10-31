@@ -28,8 +28,9 @@
 
 .crew-page-bg {
 	background-image: url("../public/images/Background_crew.png");
-	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .page-layout {
@@ -39,6 +40,10 @@
 	padding: 250px 20px 0;
 	--bs-gutter-x: 0 !important;
 	overflow-x: hidden;
+}
+
+.page-heading-container {
+	height: min-content;
 }
 
 .light-purple-text {
@@ -119,7 +124,7 @@ a {
 		border: none;
 	}
 	.page-layout {
-		padding: 150px 100px 0 !important;
+		padding: 150px 50px 0 !important;
 	}
 }
 
@@ -143,7 +148,7 @@ a {
 	}
 
 	.page-layout {
-		padding: 150px 50px 0 !important;
+		padding: 150px 30px 0 !important;
 	}
 }
 

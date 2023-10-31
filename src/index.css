@@ -14,17 +14,17 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: transparent; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: black; 
+  background: transparent; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: transparent; 
 }
 
 body {
@@ -79,6 +79,14 @@ code {
 /* Media queries tablet */
 
 @media (max-width: 1200px) {
+  .heading-3 {
+    font-size: 40px;
+  }
+
+  .heading-4 {
+    font-size: 24px;
+  }
+
   .heading-5 {
     font-size: 20px;
   }
@@ -97,6 +105,14 @@ code {
 
   .heading-2 {
     font-size: 56px;
+  }
+
+  .heading-3 {
+    font-size: 24px;
+  }
+
+  .heading-4 {
+    font-size: 16px;
   }
 
   .heading-5 {
