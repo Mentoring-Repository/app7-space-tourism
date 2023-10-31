@@ -24,7 +24,11 @@ const TechnologyList = () => {
 				<ul className="d-flex flex-row flex-xl-column justify-content-center">
 					{data.technology.map((tech, index) => (
 						<li
-							className={selected === index ? 'technology-item heading-4 mb-5 active-tech' : 'technology-item heading-4 mb-5'}
+							className={
+								selected === index
+									? "technology-item heading-4 mb-5 active-tech"
+									: "technology-item heading-4 mb-5"
+							}
 							key={index}
 							onClick={() => handleSelected(index)}
 						>

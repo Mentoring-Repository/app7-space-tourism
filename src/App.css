@@ -1,125 +1,159 @@
 .homepage {
-  background: url("/public/images/Background_complete.jpg");
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 100px 165px;
+	background: url("/public/images/Background_complete.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .homepage__content {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.light-purple-text {
-  color: rgb(208, 214, 249);
-}
-
-.white-text {
-  color: white;
-}
-
-.btn-explore {
-  font-family: "Bellefair", sans-serif;
-  font-size: 32px;
-  letter-spacing: 2px;
-  padding: 120px 70px;
-  border-radius: 100%;
-  border: none;
-  transition: all 0.3s ease;
-}
-
-.btn-explore:hover {
-  box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.2);
-}
-
-a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-}
-
-.row.homepage {
-  --bs-gutter-x: 0 !important;
-}
-
-.page-layout {
-  width: 100vw;
-  height: 100vh;
-  padding: 250px 165px;
-  --bs-gutter-x: 0 !important;
-  overflow-x: hidden;
-}
-
-.tech-style {
-  padding-right: 0;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding-bottom: 5%;
 }
 
 .destination-page-bg {
-  background-image: url("../public/images/Background_planets.jpg");
+	background-image: url("../public/images/Background_planets.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .technology-page-bg {
-  background-image: url("../public/images/Background_technology.jpg");
+	background-image: url("../public/images/Background_technology.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .crew-page-bg {
-  background-image: url("../public/images/Background_crew.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-image: url("../public/images/Background_crew.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.page-layout {
+	max-width: 1440px;
+	margin: 0 auto;
+	height: 100vh;
+	padding: 250px 20px 0;
+	--bs-gutter-x: 0 !important;
+	overflow-x: hidden;
+}
+
+.light-purple-text {
+	color: rgb(208, 214, 249);
+}
+
+.white-text {
+	color: white;
+}
+
+.btn-explore {
+	font-family: "Bellefair", sans-serif;
+	font-size: 32px;
+	letter-spacing: 2px;
+	padding: 120px 70px;
+	border-radius: 100%;
+	border: none;
+	transition: all 0.3s ease;
+}
+
+.btn-explore:hover {
+	box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.2);
+}
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+}
+
+.row.homepage {
+	--bs-gutter-x: 0 !important;
+}
+
+.tech-style {
+	padding-right: 0;
 }
 
 .page-nr {
-  color: rgb(104, 104, 104);
-  font-weight: bold;
+	color: rgb(104, 104, 104);
+	font-weight: bold;
 }
 
 .page-title {
-  color: white;
-  text-transform: uppercase;
+	color: white;
+	text-transform: uppercase;
 }
 
 .crew-style {
-  overflow: hidden;
+	overflow: hidden;
 }
 /* Media queries tablet */
 
 @media (max-width: 1200px) {
-  .homepage {
-    background: url("/public/images/Background_home_tablet.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 100px 100px 80px;
-  }
+	.homepage {
+		background: url("/public/images/Background_home_tablet.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
 
-  .btn-explore {
-    font-size: 20px;
-    letter-spacing: 1.25px;
-    padding: 70px 40px;
-    border-radius: 100%;
-    border: none;
-  }
-  .page-layout {
-    padding: 150px 0;
-  }
+	.homepage {
+		padding: 80px 10px 10px 10px;
+	}
+
+	.homepage__content {
+		max-width: 95%;
+		margin: 0 auto;
+		padding-bottom: 0;
+		padding: 20px;
+	}
+
+	.btn-explore {
+		font-size: 20px;
+		letter-spacing: 1.25px;
+		padding: 70px 40px;
+		border-radius: 100%;
+		border: none;
+	}
+	.page-layout {
+		padding: 150px 100px 0 !important;
+	}
 }
 
 @media (max-width: 1024px) {
+	.homepage {
+		height: 100%;
+	}
+}
+
+@media (max-width: 992px) {
+	.homepage {
+		height: 100vh;
+	}
 }
 
 /* Media queries mobile */
 
 @media (max-width: 768px) {
-  .homepage {
-    padding: 80px 20px 20px 20px;
-  }
+	.page-container {
+		padding: 80px 20px 20px 20px;
+	}
+
+	.page-layout {
+		padding: 150px 50px 0 !important;
+	}
 }
 
-@media (max-width: 370px) {
-  .homepage {
-    padding: 80px 10px 10px 10px;
-    height: 100%;
-  }
+@media (max-width: 300px) {
+	.homepage {
+		padding: 80px 10px 10px 10px;
+		height: 100%;
+	}
+
+	.page-layout {
+		padding: 150px 10px 0 !important;
+	}
 }

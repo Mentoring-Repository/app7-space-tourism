@@ -1,7 +1,7 @@
 const Homepage = () => {
 	return (
-		<div className="homepage">
-			<div className="homepage__content row justify-content-center align-items-end h-100">
+		<div className="homepage page-container">
+			<div className="homepage__content row justify-content-center align-items-end h-100 px-2">
 				<div className="col-12 col-xl-6 d-flex flex-column justify-content-end pb-5 px-0 text-center text-xl-start">
 					<p className="heading-5 light-purple-text">
 						SO, YOU WANT TO TRAVEL TO
@@ -14,7 +14,7 @@ const Homepage = () => {
 						we’ll give you a truly out of this world experience!
 					</p>
 				</div>
-				<div className="col-12 col-xl-6 d-flex flex-row flex-xl-column justify-content-center align-items-end pb-5">
+				<div className="col-12 col-xl-6 d-flex flex-row flex-xl-column justify-content-center align-items-end pb-0 pb-lg-5">
 					<button className="btn-explore">
 						<a href="/destination">Explore</a>
 					</button>

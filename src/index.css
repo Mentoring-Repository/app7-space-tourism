@@ -78,13 +78,25 @@ code {
 
 /* Media queries tablet */
 
-
+@media (max-width: 1200px) {
+  .heading-5 {
+    font-size: 20px;
+  }
+}
 
 /* Media queries mobile */
 
 @media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   .heading-1 {
     font-size: 80px;
+  }
+
+  .heading-2 {
+    font-size: 56px;
   }
 
   .heading-5 {
@@ -95,5 +107,13 @@ code {
     font-size: 15px;
     font-weight: 400;
     line-height: 25px;
+  }
+
+  
+}
+
+@media (max-width: 300px) {
+  .heading-5 {
+    font-size: 14px;
   }
 }
