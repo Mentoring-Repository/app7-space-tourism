@@ -116,6 +116,10 @@ a {
 		padding: 20px;
 	}
 
+	.page-container {
+		padding: 150px 0 20px !important; 
+	}
+
 	.btn-explore {
 		font-size: 20px;
 		letter-spacing: 1.25px;
@@ -124,7 +128,7 @@ a {
 		border: none;
 	}
 	.page-layout {
-		padding: 150px 50px 0 !important;
+		padding: 150px 50px 0;
 	}
 }
 
@@ -143,15 +147,21 @@ a {
 /* Media queries mobile */
 
 @media (max-width: 768px) {
-	.page-container {
-		padding: 80px 20px 20px 20px;
-	}
-
 	.page-layout {
-		padding: 150px 30px 0 !important;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		flex-wrap: nowrap;
+		padding: 150px 30px 0;
 	}
 }
 
+@media(max-width: 376px) {
+	.homepage {
+		height: 100%;
+	}
+}
+ 
 @media (max-width: 300px) {
 	.homepage {
 		padding: 80px 10px 10px 10px;
@@ -159,6 +169,6 @@ a {
 	}
 
 	.page-layout {
-		padding: 150px 10px 0 !important;
+		padding: 150px 10px 0;
 	}
 }

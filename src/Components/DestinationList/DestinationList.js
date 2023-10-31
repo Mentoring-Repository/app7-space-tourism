@@ -42,16 +42,20 @@ const DestinationList = () => {
 							onClick={() => changeDestination(des)}
 							className={
 								selected === des
-									? "pb-2 mx-auto mx-sm-0 me-auto me-sm-4 nav-text active-bottom"
-									: "pb-2 mx-auto mx-sm-0 me-auto me-sm-4 nav-text "
+									? "pb-2 mx-auto mx-sm-0 me-auto me-sm-4 nav-text destination-item active-bottom"
+									: "pb-2 mx-auto mx-sm-0 me-auto me-sm-4 nav-text destination-item"
 							}
 						>
 							{des}
 						</li>
 					))}
 				</ul>
-				<p className="heading-2 dest-title text-center text-xl-start">{destData.name} </p>
-				<p className="dest-desc text-center text-xl-start text-center text-xl-start mx-auto mx-xl-0">{destData.desc} </p>
+				<p className="heading-2 dest-title text-center text-xl-start">
+					{destData.name}{" "}
+				</p>
+				<p className="dest-desc text-center text-xl-start text-center text-xl-start mx-auto mx-xl-0">
+					{destData.desc}{" "}
+				</p>
 				<div className="row dest-details d-flex flex-column flex-sm-row">
 					<div className="col-6 text-center text-xl-start mx-auto mx-sm-0">
 						<p className="subhead-2">AVG. DISTANCE</p>

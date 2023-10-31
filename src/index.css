@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
 
+* {
+  transition: all 0.3s ease;
+}
+
 :root {
   --dark-blue: rgb(11,13,23);
   --light-purple: rgb(208,214,249);

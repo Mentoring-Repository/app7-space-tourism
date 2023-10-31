@@ -40,8 +40,16 @@
 	color: white;
 }
 
+.destination-item {
+	border-bottom: 2px solid rgb(255, 255, 255, 0);
+}
+
+.destination-item:hover {
+	border-bottom: 2px solid rgb(255, 255, 255, 0.3);
+}
+
 .active-bottom {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid white !important;
 }
 
 @media (max-width: 1200px) {

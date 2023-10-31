@@ -8,6 +8,7 @@ header {
 	align-items: center;
 	width: calc(100% - 60px);
 	font-family: "Barlow Condensed", sans-serif;
+	z-index: 1;
 }
 
 header nav {

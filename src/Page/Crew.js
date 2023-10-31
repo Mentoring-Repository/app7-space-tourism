@@ -10,7 +10,7 @@ const Crew = () => {
 						<span className="page-title">Meet your crew</span>
 					</p>
 				</div>
-				<div className="col-12">
+				<div className="col-12 d-flex ">
 					<CrewList />
 				</div>
 			</div>
