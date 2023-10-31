@@ -42,8 +42,8 @@ const DestinationList = () => {
 							onClick={() => changeDestination(des)}
 							className={
 								selected === des
-									? "mx-auto mx-sm-0 me-auto me-sm-4 nav-text active-bottom"
-									: "mx-auto mx-sm-0 me-auto me-sm-4 nav-text "
+									? "pb-2 mx-auto mx-sm-0 me-auto me-sm-4 nav-text active-bottom"
+									: "pb-2 mx-auto mx-sm-0 me-auto me-sm-4 nav-text "
 							}
 						>
 							{des}

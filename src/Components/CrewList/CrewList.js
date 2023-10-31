@@ -19,7 +19,7 @@ const CrewList = () => {
 	}, [selected]);
 
 	return (
-		<div className="row d-flex h-100">
+		<div className="row d-flex h-auto h-xl-100">
 			<div className="col-12 col-xl-6 d-flex justify-content-end flex-column order-2 order-sm-1 px-0 py-5">
 				<div className="crew-details text-center text-xl-start order-2 order-sm-1 mb-2 mb-xl-5">
 					<p className="heading-4 white-text opacity-50 text-uppercase mb-1">
