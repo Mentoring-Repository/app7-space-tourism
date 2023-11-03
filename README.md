@@ -11,7 +11,6 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -37,7 +36,7 @@ Users should be able to:
 - Solution URL: [Github](https://github.com/dumi99/app7-space-tourism)
 - Live Site URL: [Demo](https://app7-space-tourism.vercel.app/)
 
-## My process
+## The process
 
 ## Built with
 
@@ -117,7 +116,7 @@ export default App;
 
 ```
 
-3. **Project Management with Trello**: Working with a team on this project, we utilized project management tools like Trello to plan and organize our tasks. This experience simulated real-world project management, helping us coordinate efforts and meet project milestones effectively.
+3. **Project Management with Trello**: Working in a team on this project, we utilized project management tools like Trello to plan and organize our tasks. This experience simulated real-world project management, helping us coordinate efforts and meet project milestones effectively.
 ![Trello](./public/images/screenshots/trello-snip.PNG)
 
 These newfound skills not only helped me complete the space tourism website project but also expanded my knowledge and capabilities in web development and project management. I look forward to applying these skills to future projects and enhancing my proficiency as a developer.
