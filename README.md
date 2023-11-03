@@ -1,70 +1,154 @@
-# Getting Started with Create React App
+# Frontend Mentor - Space tourism website solution 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## The challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+- View the optimal layout for each of the website's pages depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each page and be able to toggle between the tabs to see new information
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshot
 
-### `npm run build`
+![Home Page](./public/images/screenshots/home-snip.PNG)
+![Destination Page](./public/images//screenshots/destinations-snip.PNG)
+![Crew Page](./public/images/screenshots/crew-snip.PNG)
+![Technology Page](./public/images/screenshots/technology-snip.PNG)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Links
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Solution URL: [Github](https://github.com/dumi99/app7-space-tourism)
+- Live Site URL: [Demo](https://app7-space-tourism.vercel.app/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## My process
 
-### `npm run eject`
+## Built with
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- HTML5
+- CSS 
+- Flexbox
+- Bootstrap
+- [React](https://reactjs.org/) - JS library
+- [React Router](https://reactrouter.com/en/main)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## What I learned
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+During the course of this project, I gained valuable insights and learned several essential skills:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **React Router**: I successfully implemented React Router to manage multi-page navigation in a React application. This allowed me to create a seamless user experience with different pages for home, destinations, crew, and technology, enhancing the website's overall functionality.
 
-## Learn More
+```js
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+import "./App.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Homepage from "./Page/Homepage";
+import Header from "./Components/Header/Header";
+import Destination from "./Page/Destination";
+import Technology from "./Page/Technology";
+import Crew from "./Page/Crew";
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Homepage />,
+  },
+  {
+    path: "/destination",
+    element: <Destination />,
+  },
+  {
+    path: "/technology",
+    element: <Technology />,
+  },
+  {
+    path: "/crew",
+    element: <Crew />,
+  },
+]);
 
-### Code Splitting
+function App() {
+  return (
+    <>
+      <Header />
+      <RouterProvider router={router} />
+    </>
+  );
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+export default App;
 
-### Analyzing the Bundle Size
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. **React Hooks (useState and useEffect)**: I delved into the world of React Hooks, specifically `useState` and `useEffect`. These essential hooks played a significant role in managing state and side effects in my application. Through practice and experimentation, I gained a solid understanding of how to use them efficiently.
 
-### Making a Progressive Web App
+```js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+	const [selected, setSelected] = useState(0);
+	const [techData, setTechData] = useState({});
 
-### Advanced Configuration
+	const handleSelected = (index) => {
+		setSelected(index);
+	};
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+	useEffect(() => {
+		data.technology.forEach((item, index) => {
+			if (selected === index) {
+				setTechData(item);
+			}
+		});
+	}, [selected]);
 
-### Deployment
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3. **Project Management with Trello**: Working with a team on this project, we utilized project management tools like Trello to plan and organize our tasks. This experience simulated real-world project management, helping us coordinate efforts and meet project milestones effectively.
+![Trello](./public/images/screenshots/trello-snip.PNG)
 
-### `npm run build` fails to minify
+These newfound skills not only helped me complete the space tourism website project but also expanded my knowledge and capabilities in web development and project management. I look forward to applying these skills to future projects and enhancing my proficiency as a developer.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Authors
+
+### Dumitrache George - Mentor
+
+- LinkedIn - [George Dumitrache](https://www.linkedin.com/in/george-dumitrache-1021b120b/)
+- Github - [dumi99](https://github.com/dumi99)
+
+### Gava Marian - Trainee
+
+- LinkedIn - [Gava Marian](https://www.linkedin.com/in/gava-marian-551034285/)
+- Github - [GavaMG](https://github.com/GavaMG)
+
+### Andrei Morosan - Trainee
+
+- LinkedIn - [Andrei Morosan](https://www.linkedin.com/in/andrei-morosan-3463a6159/)
+- Github - [AndreiMorosanC](https://github.com/AndreiMorosanC)
+
+### Flavius - Trainee
+
+- Github - [FlaVius1205](https://github.com/FlaVius1205)
+
+### Szidelo Claudiu - Trainee
+
+- LinkedIn - [Claudiu Szidelo](https://www.linkedin.com/in/claudiu-szidelo-671b1324a/)
+- Github - [Szidelo](https://github.com/Szidelo)
+- Frontend Mentor - [@Szidelo](https://www.frontendmentor.io/profile/Szidelo)
+
+## Acknowledgments
+
+We would like to express our gratitude to **Dumitrache George**,  our mentor, who provided valuable guidance and advice throughout the project.

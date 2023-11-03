@@ -18,6 +18,7 @@ const DestinationList = () => {
 		});
 		setDestinations(dest);
 	}, []);
+	
 	useEffect(() => {
 		data.destinations.forEach((destination) => {
 			if (destination.name === selected) {
